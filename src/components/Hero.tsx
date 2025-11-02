@@ -25,8 +25,7 @@ const Hero = () => {
             Il Tuo Sorriso è la Nostra Missione
           </h1>
           <p className="text-xl md:text-2xl text-primary-foreground/90 leading-relaxed">
-            Dal 1970 punto di riferimento nel centro di Milano. Certificazione ISO 9001:2015 e 
-            tecnologie all'avanguardia per il tuo benessere.
+            Dal 1970 punto di riferimento nel centro di Milano per un sorriso bello, sano e duraturo
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
             <Button
