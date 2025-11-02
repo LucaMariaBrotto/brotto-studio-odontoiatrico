@@ -10,8 +10,8 @@ const Footer = () => {
               Brotto Studio Odontoiatrico
             </h3>
             <p className="text-background/80 leading-relaxed">
-              Studio odontoiatrico di eccellenza a Milano, dedicato alla salute e alla bellezza del
-              tuo sorriso.
+              Dal 1970 punto di riferimento nel centro di Milano per la salute e la bellezza del
+              tuo sorriso. Certificazione ISO 9001:2015.
             </p>
           </div>
 

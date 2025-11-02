@@ -3,6 +3,11 @@ import { User, Briefcase } from "lucide-react";
 
 const teamMembers = [
   {
+    name: "Dott. Paolo Maria Brotto",
+    role: "Direttore Sanitario",
+    description: "Specializzato in odontoiatria presso la Boston University. Dal 1993 direttore sanitario dello studio, esperto in implantologia, protesi, endodonzia, conservativa, chirurgia e ortodonzia.",
+  },
+  {
     name: "Elena Brotto",
     role: "Segretaria",
     description: "Il punto di riferimento per appuntamenti e gestione amministrativa dello studio.",
@@ -27,7 +32,7 @@ const Team = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+        <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
           {teamMembers.map((member, index) => (
             <Card
               key={index}
