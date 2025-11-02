@@ -30,7 +30,9 @@ const reviews = [
 ];
 
 const Reviews = () => {
-  // Link diretto per lasciare una recensione su Google Maps
+  // Link per vedere le recensioni su Google
+  const googlePlaceUrl = "https://www.google.com/maps/place/Brotto+Studio+Odontoiatrico/@45.462814,9.1878712,17z/data=!4m8!3m7!1s0x4786c584664af2c7:0x65de1f1c101b6a5d!8m2!3d45.462814!4d9.1878712!9m1!1b1!16s%2Fg%2F1tdjt2r7";
+  // Link per lasciare una recensione
   const googleReviewUrl = "https://search.google.com/local/writereview?placeid=ChIJx_YqZI3GhkcR_aVrEBw_3mU";
   
   return (
@@ -38,45 +40,42 @@ const Reviews = () => {
       <div className="container mx-auto px-4">
         <div className="text-center max-w-3xl mx-auto mb-16 animate-in fade-in slide-in-from-bottom duration-700">
           <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
-            Cosa Dicono i Nostri Pazienti
+            Recensioni Google
           </h2>
           <p className="text-xl text-muted-foreground">
-            La soddisfazione dei nostri pazienti è la nostra migliore referenza
+            Leggi le opinioni dei nostri pazienti su Google
           </p>
         </div>
 
-        {/* Widget Google Maps con recensioni integrate */}
-        <div className="max-w-4xl mx-auto mb-16">
+        {/* Call to action per Google Reviews */}
+        <div className="max-w-3xl mx-auto mb-16">
           <Card className="overflow-hidden shadow-strong">
-            <CardContent className="p-0">
-              <div className="aspect-[16/9] w-full">
-                <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2798.089732442744!2d9.187871176527965!3d45.46281397107352!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4786c584664af2c7%3A0x65de1f1c101b6a5d!2sBrotto%20Studio%20Odontoiatrico!5e0!3m2!1sit!2sit!4v1234567890123!5m2!1sit!2sit"
-                  width="100%"
-                  height="100%"
-                  style={{ border: 0 }}
-                  allowFullScreen
-                  loading="lazy"
-                  referrerPolicy="no-referrer-when-downgrade"
-                  title="Brotto Studio Odontoiatrico - Mappa e Recensioni Google"
-                ></iframe>
+            <CardContent className="p-8 text-center space-y-6 bg-gradient-to-b from-background to-accent/5">
+              <div className="flex items-center justify-center gap-3">
+                <div className="flex">
+                  {[...Array(5)].map((_, i) => (
+                    <Star key={i} className="w-8 h-8 fill-primary text-primary" />
+                  ))}
+                </div>
+                <span className="text-3xl font-bold text-foreground">
+                  5.0
+                </span>
               </div>
               
-              <div className="p-8 text-center space-y-6 bg-gradient-to-b from-background to-accent/5">
-                <div className="flex items-center justify-center gap-3">
-                  <div className="flex">
-                    {[...Array(5)].map((_, i) => (
-                      <Star key={i} className="w-6 h-6 fill-primary text-primary" />
-                    ))}
-                  </div>
-                  <span className="text-2xl font-bold text-foreground">
-                    5.0
-                  </span>
-                </div>
-                
-                <p className="text-muted-foreground text-lg">
-                  Visualizza tutte le recensioni Google dei nostri pazienti sulla mappa
-                </p>
+              <p className="text-muted-foreground text-lg">
+                Valutazione media su Google
+              </p>
+              
+              <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
+                <Button
+                  onClick={() => window.open(googlePlaceUrl, '_blank')}
+                  size="lg"
+                  variant="outline"
+                  className="shadow-strong text-lg px-8"
+                >
+                  Leggi le Recensioni Google
+                  <ExternalLink className="w-4 h-4 ml-2" />
+                </Button>
                 
                 <Button
                   onClick={() => window.open(googleReviewUrl, '_blank')}
@@ -84,15 +83,15 @@ const Reviews = () => {
                   className="shadow-strong text-lg px-8"
                 >
                   <Star className="w-5 h-5 mr-2" />
-                  Lascia una Recensione su Google
+                  Lascia una Recensione
                   <ExternalLink className="w-4 h-4 ml-2" />
                 </Button>
-                
-                <p className="text-sm text-muted-foreground max-w-xl mx-auto">
-                  La tua opinione è importante! Lascia una recensione su Google per aiutare altri pazienti 
-                  a conoscere la nostra esperienza e qualità del servizio.
-                </p>
               </div>
+              
+              <p className="text-sm text-muted-foreground max-w-xl mx-auto">
+                La tua opinione è importante! Le recensioni Google aiutano altri pazienti 
+                a conoscere la qualità del nostro servizio.
+              </p>
             </CardContent>
           </Card>
         </div>
@@ -131,7 +130,7 @@ const Reviews = () => {
         <div className="text-center">
           <p className="text-muted-foreground">
             Valutazione media:{" "}
-            <span className="font-bold text-primary text-lg">5.0/5</span> su oltre 100 recensioni
+            <span className="font-bold text-primary text-lg">5.0/5</span> su Google
           </p>
         </div>
       </div>
