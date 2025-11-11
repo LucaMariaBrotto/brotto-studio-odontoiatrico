@@ -14,16 +14,11 @@ const contactInfo = [{
   title: "Email",
   content: "info@brottostudio.it"
 }];
-const openingHours = [{
-  day: "Lunedì - Venerdì",
-  hours: "8:30 - 13:00 | 14:30 - 18:00"
-}, {
-  day: "Sabato",
-  hours: "Chiuso"
-}, {
-  day: "Domenica",
-  hours: "Chiuso"
-}];
+const openingHours = {
+  days: "Lunedì - Venerdì",
+  morning: "8:30 - 13:00",
+  afternoon: "14:30 - 18:00"
+};
 const Contact = () => {
   return <section id="contatti" className="py-24 bg-gradient-to-b from-muted to-background">
       <div className="container mx-auto px-4">
@@ -69,13 +64,20 @@ const Contact = () => {
                 <Clock className="w-6 h-6 text-primary" />
                 Orari di Apertura
               </h3>
-              <div className="space-y-4">
-                {openingHours.map((schedule, index) => (
-                  <div key={index} className="flex justify-between items-center py-3 border-b border-border last:border-0">
-                    <span className="font-semibold text-card-foreground">{schedule.day}</span>
-                    <span className="text-muted-foreground">{schedule.hours}</span>
+              <div className="text-center space-y-6">
+                <div className="inline-block px-6 py-3 bg-gradient-to-r from-primary/10 to-secondary/10 rounded-full">
+                  <p className="text-lg font-bold text-card-foreground">{openingHours.days}</p>
+                </div>
+                <div className="space-y-3">
+                  <div className="flex items-center justify-center gap-3">
+                    <span className="text-muted-foreground">Mattina:</span>
+                    <span className="text-xl font-semibold text-card-foreground">{openingHours.morning}</span>
                   </div>
-                ))}
+                  <div className="flex items-center justify-center gap-3">
+                    <span className="text-muted-foreground">Pomeriggio:</span>
+                    <span className="text-xl font-semibold text-card-foreground">{openingHours.afternoon}</span>
+                  </div>
+                </div>
               </div>
             </CardContent>
           </Card>
