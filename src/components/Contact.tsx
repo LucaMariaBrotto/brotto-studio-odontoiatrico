@@ -11,7 +11,7 @@ const contactInfo = [
   {
     icon: Phone,
     title: "Telefono",
-    content: "02 XXXX XXXX",
+    content: "02 86462283",
   },
   {
     icon: Mail,
