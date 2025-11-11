@@ -16,10 +16,10 @@ const contactInfo = [{
 }];
 const openingHours = [{
   day: "Lunedì - Venerdì",
-  hours: "9:00 - 19:00"
+  hours: "8:30 - 13:00 | 14:30 - 18:00"
 }, {
   day: "Sabato",
-  hours: "9:00 - 13:00"
+  hours: "Chiuso"
 }, {
   day: "Domenica",
   hours: "Chiuso"
@@ -70,14 +70,12 @@ const Contact = () => {
                 Orari di Apertura
               </h3>
               <div className="space-y-4">
-                {openingHours.map((schedule, index) => {})}
-              </div>
-              <div className="mt-8 p-6 rounded-lg bg-gradient-to-br from-primary/10 to-secondary/10 border border-primary/20">
-                <p className="text-center text-card-foreground">
-                  <span className="font-bold">Emergenze?</span>
-                  <br />
-                  Chiamaci per un appuntamento urgente
-                </p>
+                {openingHours.map((schedule, index) => (
+                  <div key={index} className="flex justify-between items-center py-3 border-b border-border last:border-0">
+                    <span className="font-semibold text-card-foreground">{schedule.day}</span>
+                    <span className="text-muted-foreground">{schedule.hours}</span>
+                  </div>
+                ))}
               </div>
             </CardContent>
           </Card>
