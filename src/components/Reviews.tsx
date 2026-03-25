@@ -116,10 +116,7 @@ const Reviews = () => {
                 <p className="text-card-foreground leading-relaxed mb-4 text-lg">
                   "{review.text}"
                 </p>
-                <div className="flex items-center justify-between">
-                  <p className="font-bold text-card-foreground">{review.name}</p>
-                  <p className="text-sm text-muted-foreground">{review.date}</p>
-                </div>
+                <p className="font-bold text-card-foreground">{review.name}</p>
               </CardContent>
             </Card>
           ))}

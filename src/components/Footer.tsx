@@ -1,4 +1,4 @@
-import { MapPin, Phone, Mail } from "lucide-react";
+import { MapPin, Phone, Mail, Clock } from "lucide-react";
 
 const Footer = () => {
   return (
@@ -24,7 +24,7 @@ const Footer = () => {
               </div>
               <div className="flex items-center gap-2 text-background/80">
                 <Phone className="w-5 h-5 flex-shrink-0" />
-                <span>02 XXXX XXXX</span>
+                <span>02 86462283</span>
               </div>
               <div className="flex items-center gap-2 text-background/80">
                 <Mail className="w-5 h-5 flex-shrink-0" />
@@ -36,9 +36,12 @@ const Footer = () => {
           <div>
             <h4 className="text-lg font-bold mb-4 text-primary-foreground">Orari</h4>
             <div className="space-y-2 text-background/80">
-              <p>Lunedì - Venerdì: 9:00 - 19:00</p>
-              <p>Sabato: 9:00 - 13:00</p>
-              <p>Domenica: Chiuso</p>
+              <div className="flex items-center gap-2">
+                <Clock className="w-5 h-5 flex-shrink-0" />
+                <span>Lunedì - Venerdì</span>
+              </div>
+              <p className="ml-7">8:30 - 13:00 | 14:30 - 18:00</p>
+              <p className="ml-7 italic text-background/60">Si riceve su appuntamento</p>
             </div>
           </div>
         </div>
