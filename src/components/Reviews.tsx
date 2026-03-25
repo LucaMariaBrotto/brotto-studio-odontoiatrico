@@ -13,7 +13,7 @@ const reviews = [
     name: "Giovanni P.",
     rating: 5,
     text: "Paolo è il mio dentista da circa 20 anni. La professionalità è altissima. Il dottore è molto preparato, onesto e trasparente ed agisce nell'interesse del paziente! Lo studio è molto bello e molto pulito. Tutto lo staff è fantastico, gentilissimo e disponibilissimo nei confronti del paziente. La posizione è comodissima, facilmente raggiungibile con ogni mezzo di trasporto. Studio dentistico consigliatissimo!",
-    date: "2 anni fa",
+    
   },
   {
     name: "Lorenzo S.",
