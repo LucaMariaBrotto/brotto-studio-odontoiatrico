@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Phone, Mail } from "lucide-react";
-import heroImage from "@/assets/hero-dental.jpg";
+import heroImage from "@/assets/duomo-milano.jpg";
 
 const Hero = () => {
   const scrollToSection = (id: string) => {
