@@ -4,28 +4,28 @@ import { Star, Quote, ExternalLink } from "lucide-react";
 
 const reviews = [
   {
-    name: "Marco R.",
+    name: "Laura B.",
     rating: 5,
-    text: "Professionalità e cortesia eccezionali. Mi sono sentito subito a mio agio. Il risultato del trattamento ha superato le mie aspettative.",
-    date: "2 settimane fa",
+    text: "Il dottor Paolo e il suo staff sono una certezza per me, che sono loro cliente da trent'anni, prima del padre Luigi e poi del figlio Paolo. Mi sono affidata a loro anche per i miei figli. L'ultimo intervento per l'estrazione del dente del giudizio di mio figlio è andato benissimo. Vi ringraziamo per la grande competenza, gentilezza, attenzione e umanità che dimostrate sempre.",
+    date: "2 mesi fa",
   },
   {
-    name: "Sofia M.",
+    name: "Giovanni P.",
     rating: 5,
-    text: "Studio modernissimo con attrezzature all'avanguardia. Il personale è gentilissimo e molto competente. Consigliatissimo!",
-    date: "1 mese fa",
+    text: "Paolo è il mio dentista da circa 20 anni. La professionalità è altissima. Il dottore è molto preparato, onesto e trasparente ed agisce nell'interesse del paziente! Lo studio è molto bello e molto pulito. Tutto lo staff è fantastico, gentilissimo e disponibilissimo nei confronti del paziente. La posizione è comodissima, facilmente raggiungibile con ogni mezzo di trasporto. Studio dentistico consigliatissimo!",
+    date: "2 anni fa",
   },
   {
-    name: "Luca P.",
+    name: "Lorenzo S.",
     rating: 5,
-    text: "Finalmente ho trovato uno studio odontoiatrico di fiducia. Prezzi chiari, nessuna sorpresa. Ottimo rapporto qualità-prezzo.",
-    date: "3 settimane fa",
+    text: "Conosco il doc Paolo da 10 anni. Mi ha insegnato a lavarmi i denti, mi ha fatto trattamento ortodontico e rimosso i 4 denti del giudizio. Voto 5 stelle!",
+    date: "1 anno fa",
   },
   {
-    name: "Giulia T.",
+    name: "Tonino M.",
     rating: 5,
-    text: "Avevo molta paura del dentista, ma qui mi hanno messo a mio agio. Trattamento indolore e risultato perfetto. Grazie!",
-    date: "1 settimana fa",
+    text: "Sono passato dal padre (molto bravo) al figlio altrettanto bravo! Mi hanno sistemato la bocca disastrata ed oggi, da ormai 5 anni… solo igiene orale. Grazie Paolo",
+    date: "1 anno fa",
   },
 ];
 
