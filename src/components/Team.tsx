@@ -7,20 +7,20 @@ const teamMembers = [
   {
     name: "Dott. Paolo Maria Brotto",
     role: "Direttore Sanitario",
-    description: "Specializzato in odontoiatria presso la Boston University. Dal 1993 direttore sanitario dello studio, esperto in implantologia, protesi, endodonzia, conservativa, chirurgia e ortodonzia.",
+    description: "Laureato in Medicina e Chirurgia all'Università Statale di Milano, specializzato in odontoiatria presso la Boston University. Dal 1993 direttore sanitario dello studio, esperto in implantologia, protesi, endodonzia, conservativa, chirurgia e ortodonzia.",
     image: paoloImg,
-  },
-  {
-    name: "Elena Brotto",
-    role: "Segretaria",
-    description: "Il punto di riferimento per appuntamenti e gestione amministrativa dello studio.",
-    image: elenaImg,
   },
   {
     name: "Valentina",
     role: "Assistente alla Poltrona",
     description: "Specializzata nell'assistenza durante i trattamenti e nella cura del paziente.",
     image: null,
+  },
+  {
+    name: "Elena Poggi",
+    role: "Segretaria",
+    description: "Il punto di riferimento per appuntamenti e gestione amministrativa dello studio.",
+    image: elenaImg,
   },
 ];
 
