@@ -42,9 +42,9 @@ const Navbar = () => {
         <div className="flex items-center justify-between">
           <button
             onClick={() => scrollToSection("home")}
-            className="text-xl font-bold text-primary hover:opacity-80 transition-opacity"
+            className="hover:opacity-80 transition-opacity"
           >
-            Brotto Studio Odontoiatrico
+            <img src={logoImg} alt="Brotto Studio Odontoiatrico" className="h-10" />
           </button>
 
           {/* Desktop Menu */}
