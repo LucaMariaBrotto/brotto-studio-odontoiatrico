@@ -1,21 +1,26 @@
 import { Card, CardContent } from "@/components/ui/card";
-import { User, Briefcase } from "lucide-react";
+import { Briefcase } from "lucide-react";
+import paoloImg from "@/assets/paolo-brotto.jpeg";
+import elenaImg from "@/assets/elena-brotto.jpeg";
 
 const teamMembers = [
   {
     name: "Dott. Paolo Maria Brotto",
     role: "Direttore Sanitario",
     description: "Specializzato in odontoiatria presso la Boston University. Dal 1993 direttore sanitario dello studio, esperto in implantologia, protesi, endodonzia, conservativa, chirurgia e ortodonzia.",
+    image: paoloImg,
   },
   {
     name: "Elena Brotto",
     role: "Segretaria",
     description: "Il punto di riferimento per appuntamenti e gestione amministrativa dello studio.",
+    image: elenaImg,
   },
   {
     name: "Valentina",
     role: "Assistente alla Poltrona",
     description: "Specializzata nell'assistenza durante i trattamenti e nella cura del paziente.",
+    image: null,
   },
 ];
 
@@ -39,8 +44,18 @@ const Team = () => {
               className="group hover:shadow-strong transition-all duration-300 hover:-translate-y-2 border-border bg-card"
             >
               <CardContent className="p-8 text-center">
-                <div className="w-24 h-24 mx-auto mb-6 rounded-full bg-gradient-to-br from-primary to-secondary flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
-                  <User className="w-12 h-12 text-primary-foreground" />
+                <div className="w-32 h-32 mx-auto mb-6 rounded-full overflow-hidden bg-gradient-to-br from-primary to-secondary flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                  {member.image ? (
+                    <img
+                      src={member.image}
+                      alt={member.name}
+                      className="w-full h-full object-cover object-top"
+                    />
+                  ) : (
+                    <span className="text-4xl font-bold text-primary-foreground">
+                      {member.name.charAt(0)}
+                    </span>
+                  )}
                 </div>
                 <h3 className="text-2xl font-bold text-card-foreground mb-2">
                   {member.name}

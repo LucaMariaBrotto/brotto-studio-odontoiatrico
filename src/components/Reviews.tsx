@@ -7,31 +7,29 @@ const reviews = [
     name: "Laura B.",
     rating: 5,
     text: "Il dottor Paolo e il suo staff sono una certezza per me, che sono loro cliente da trent'anni, prima del padre Luigi e poi del figlio Paolo. Mi sono affidata a loro anche per i miei figli. L'ultimo intervento per l'estrazione del dente del giudizio di mio figlio è andato benissimo. Vi ringraziamo per la grande competenza, gentilezza, attenzione e umanità che dimostrate sempre.",
-    date: "2 mesi fa",
+    
   },
   {
     name: "Giovanni P.",
     rating: 5,
     text: "Paolo è il mio dentista da circa 20 anni. La professionalità è altissima. Il dottore è molto preparato, onesto e trasparente ed agisce nell'interesse del paziente! Lo studio è molto bello e molto pulito. Tutto lo staff è fantastico, gentilissimo e disponibilissimo nei confronti del paziente. La posizione è comodissima, facilmente raggiungibile con ogni mezzo di trasporto. Studio dentistico consigliatissimo!",
-    date: "2 anni fa",
+    
   },
   {
     name: "Lorenzo S.",
     rating: 5,
     text: "Conosco il doc Paolo da 10 anni. Mi ha insegnato a lavarmi i denti, mi ha fatto trattamento ortodontico e rimosso i 4 denti del giudizio. Voto 5 stelle!",
-    date: "1 anno fa",
   },
   {
     name: "Tonino M.",
     rating: 5,
     text: "Sono passato dal padre (molto bravo) al figlio altrettanto bravo! Mi hanno sistemato la bocca disastrata ed oggi, da ormai 5 anni… solo igiene orale. Grazie Paolo",
-    date: "1 anno fa",
   },
 ];
 
 const Reviews = () => {
   // Link per vedere le recensioni su Google
-  const googlePlaceUrl = "https://www.google.com/maps/place/Brotto+Studio+Odontoiatrico/@45.462814,9.1878712,17z/data=!4m8!3m7!1s0x4786c584664af2c7:0x65de1f1c101b6a5d!8m2!3d45.462814!4d9.1878712!9m1!1b1!16s%2Fg%2F1tdjt2r7";
+  const googlePlaceUrl = "https://www.google.com/maps/place/Brotto+Studio+Odontoiatrico/@45.4624472,9.1843558,17z/data=!4m18!1m9!3m8!1s0x4786c6ab8fb9ff55:0x1c293e0989737ece!2sBrotto+Studio+Odontoiatrico!8m2!3d45.4624472!4d9.1869307!9m1!1b1!16s%2Fg%2F1tzghj1c!3m7!1s0x4786c6ab8fb9ff55:0x1c293e0989737ece!8m2!3d45.4624472!4d9.1869307!9m1!1b1!16s%2Fg%2F1tzghj1c?entry=ttu&g_ep=EgoyMDI2MDMyMi4wIKXMDSoASAFQAw%3D%3D";
   // Link per lasciare una recensione
   const googleReviewUrl = "https://search.google.com/local/writereview?placeid=ChIJx_YqZI3GhkcR_aVrEBw_3mU";
   
@@ -118,10 +116,7 @@ const Reviews = () => {
                 <p className="text-card-foreground leading-relaxed mb-4 text-lg">
                   "{review.text}"
                 </p>
-                <div className="flex items-center justify-between">
-                  <p className="font-bold text-card-foreground">{review.name}</p>
-                  <p className="text-sm text-muted-foreground">{review.date}</p>
-                </div>
+                <p className="font-bold text-card-foreground">{review.name}</p>
               </CardContent>
             </Card>
           ))}
