@@ -19,13 +19,11 @@ const reviews = [
     name: "Lorenzo S.",
     rating: 5,
     text: "Conosco il doc Paolo da 10 anni. Mi ha insegnato a lavarmi i denti, mi ha fatto trattamento ortodontico e rimosso i 4 denti del giudizio. Voto 5 stelle!",
-    date: "1 anno fa",
   },
   {
     name: "Tonino M.",
     rating: 5,
     text: "Sono passato dal padre (molto bravo) al figlio altrettanto bravo! Mi hanno sistemato la bocca disastrata ed oggi, da ormai 5 anni… solo igiene orale. Grazie Paolo",
-    date: "1 anno fa",
   },
 ];
 
