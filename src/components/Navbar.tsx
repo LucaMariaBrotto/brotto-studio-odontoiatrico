@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Phone, Menu, X } from "lucide-react";
+import logoImg from "@/assets/logo-brotto.png";
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
