@@ -7,7 +7,7 @@ const reviews = [
     name: "Laura B.",
     rating: 5,
     text: "Il dottor Paolo e il suo staff sono una certezza per me, che sono loro cliente da trent'anni, prima del padre Luigi e poi del figlio Paolo. Mi sono affidata a loro anche per i miei figli. L'ultimo intervento per l'estrazione del dente del giudizio di mio figlio è andato benissimo. Vi ringraziamo per la grande competenza, gentilezza, attenzione e umanità che dimostrate sempre.",
-    date: "2 mesi fa",
+    
   },
   {
     name: "Giovanni P.",
