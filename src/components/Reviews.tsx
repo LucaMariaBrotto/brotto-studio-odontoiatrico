@@ -31,7 +31,7 @@ const Reviews = () => {
   // Link per vedere le recensioni su Google
   const googlePlaceUrl = "https://www.google.com/maps/place/Brotto+Studio+Odontoiatrico/@45.4624472,9.1843558,17z/data=!4m18!1m9!3m8!1s0x4786c6ab8fb9ff55:0x1c293e0989737ece!2sBrotto+Studio+Odontoiatrico!8m2!3d45.4624472!4d9.1869307!9m1!1b1!16s%2Fg%2F1tzghj1c!3m7!1s0x4786c6ab8fb9ff55:0x1c293e0989737ece!8m2!3d45.4624472!4d9.1869307!9m1!1b1!16s%2Fg%2F1tzghj1c?entry=ttu&g_ep=EgoyMDI2MDMyMi4wIKXMDSoASAFQAw%3D%3D";
   // Link per lasciare una recensione
-  const googleReviewUrl = "https://search.google.com/local/writereview?placeid=ChIJx_YqZI3GhkcR_aVrEBw_3mU";
+  const googleReviewUrl = "https://search.google.com/local/writereview?placeid=ChIJVf-5j6vGhkcRzn5ziQk-KRw";
   
   return (
     <section id="recensioni" className="py-24 bg-background">
