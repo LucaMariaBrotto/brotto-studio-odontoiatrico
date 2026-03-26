@@ -1,20 +1,41 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Train, Bus, TrainFront } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { MapPin, Phone, Mail, Clock } from "lucide-react";
-const contactInfo = [{
-  icon: MapPin,
-  title: "Indirizzo",
-  content: "Via Unione 2, Milano"
-}, {
-  icon: Phone,
-  title: "Telefono",
-  content: "02 86462283"
-}, {
-  icon: Mail,
-  title: "Email",
-  content: "info@brottostudio.it"
-}];
+import { MapPin, Phone, Mail, Clock, Printer } from "lucide-react";
+
+const googleMapsUrl = "https://www.google.com/maps/place/Brotto+Studio+Odontoiatrico/@45.4624472,9.1843558,17z/data=!3m1!4b1!4m6!3m5!1s0x4786c6ab8fb9ff55:0x1c293e0989737ece!8m2!3d45.4624472!4d9.1869307!16s%2Fg%2F1tzghj1c";
+
+const contactItems = [
+  {
+    icon: MapPin,
+    title: "Indirizzo",
+    content: "Via Unione 2, Milano",
+    href: googleMapsUrl,
+    external: true,
+  },
+  {
+    icon: Phone,
+    title: "Telefono",
+    content: "02 86462283",
+    href: "tel:0286462283",
+    external: false,
+  },
+  {
+    icon: Printer,
+    title: "Fax",
+    content: "02 8690627",
+    href: "tel:028690627",
+    external: false,
+  },
+  {
+    icon: Mail,
+    title: "Email",
+    content: "info@brottostudio.it",
+    href: "mailto:info@brottostudio.it",
+    external: false,
+  },
+];
+
 const openingHours = {
   days: "Dal Lunedì al Giovedì",
   morning: "8:30 - 13:00",
@@ -41,19 +62,29 @@ const Contact = () => {
                 Informazioni di Contatto
               </h3>
               <div className="space-y-6">
-                {contactInfo.map((info, index) => <div key={index} className="flex items-start gap-4">
-                    <div className="w-12 h-12 flex-shrink-0 rounded-full bg-gradient-to-br from-primary to-secondary flex items-center justify-center">
+                {contactItems.map((info, index) => (
+                  <a
+                    key={index}
+                    href={info.href}
+                    target={info.external ? "_blank" : undefined}
+                    rel={info.external ? "noopener noreferrer" : undefined}
+                    className="flex items-start gap-4 group cursor-pointer"
+                  >
+                    <div className="w-12 h-12 flex-shrink-0 rounded-full bg-gradient-to-br from-primary to-secondary flex items-center justify-center group-hover:scale-110 transition-transform">
                       <info.icon className="w-6 h-6 text-primary-foreground" />
                     </div>
                     <div>
                       <p className="font-bold text-card-foreground mb-1">{info.title}</p>
-                      <p className="text-muted-foreground">{info.content}</p>
+                      <p className="text-muted-foreground group-hover:text-primary transition-colors">{info.content}</p>
                     </div>
-                  </div>)}
+                  </a>
+                ))}
               </div>
-              <Button className="w-full mt-8 bg-gradient-to-r from-primary to-secondary hover:opacity-90" size="lg">
-                <Phone className="w-5 h-5 mr-2" />
-                Prenota Ora
+              <Button asChild className="w-full mt-8 bg-gradient-to-r from-primary to-secondary hover:opacity-90" size="lg">
+                <a href="tel:0286462283">
+                  <Phone className="w-5 h-5 mr-2" />
+                  Prenota Ora
+                </a>
               </Button>
             </CardContent>
           </Card>
