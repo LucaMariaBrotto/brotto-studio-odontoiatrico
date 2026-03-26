@@ -1,4 +1,5 @@
 import { Card, CardContent } from "@/components/ui/card";
+import { Train, Bus, TrainFront } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { MapPin, Phone, Mail, Clock } from "lucide-react";
 const contactInfo = [{
@@ -86,13 +87,47 @@ const Contact = () => {
 
         {/* Map placeholder */}
         <Card className="max-w-5xl mx-auto border-border bg-card shadow-medium overflow-hidden">
-          <div className="h-96 bg-gradient-to-br from-muted to-muted-foreground/20 flex items-center justify-center">
-            <div className="text-center">
-              <MapPin className="w-16 h-16 text-primary mx-auto mb-4" />
+          <CardContent className="p-8">
+            <div className="text-center mb-8">
+              <MapPin className="w-12 h-12 text-primary mx-auto mb-3" />
               <p className="text-xl font-bold text-foreground">Via Unione 2, Milano</p>
-              <p className="text-muted-foreground mt-2">Facilmente raggiungibile con mezzi pubblici</p>
             </div>
-          </div>
+
+            <h3 className="text-2xl font-bold text-card-foreground mb-6 text-center">Come Raggiungerci</h3>
+
+            <div className="grid md:grid-cols-3 gap-6">
+              {/* Tram */}
+              <div className="text-center space-y-2">
+                <div className="w-12 h-12 mx-auto rounded-full bg-gradient-to-br from-primary to-secondary flex items-center justify-center">
+                  <Train className="w-6 h-6 text-primary-foreground" />
+                </div>
+                <p className="font-bold text-card-foreground">Tram</p>
+                <p className="text-muted-foreground text-sm">A 130 m fermata dei tram N°: 2 – 3 – 14 – 20 – 24 – 27</p>
+              </div>
+
+              {/* Autobus */}
+              <div className="text-center space-y-2">
+                <div className="w-12 h-12 mx-auto rounded-full bg-gradient-to-br from-primary to-secondary flex items-center justify-center">
+                  <Bus className="w-6 h-6 text-primary-foreground" />
+                </div>
+                <p className="font-bold text-card-foreground">Autobus</p>
+                <p className="text-muted-foreground text-sm">A 180 m fermata autobus N° 50</p>
+              </div>
+
+              {/* Metropolitana */}
+              <div className="text-center space-y-2">
+                <div className="w-12 h-12 mx-auto rounded-full bg-gradient-to-br from-primary to-secondary flex items-center justify-center">
+                  <TrainFront className="w-6 h-6 text-primary-foreground" />
+                </div>
+                <p className="font-bold text-card-foreground">Metropolitana</p>
+                <div className="text-muted-foreground text-sm space-y-1">
+                  <p>A 180 m fermata <span className="font-semibold">MISSORI</span> linea GIALLA</p>
+                  <p>A 220 m fermata <span className="font-semibold">DUOMO</span> linea ROSSA</p>
+                  <p>A ~400 m fermata <span className="font-semibold">CORDUSIO</span> linea ROSSA</p>
+                </div>
+              </div>
+            </div>
+          </CardContent>
         </Card>
       </div>
     </section>;
