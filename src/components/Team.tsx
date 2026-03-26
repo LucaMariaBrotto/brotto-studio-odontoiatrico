@@ -1,39 +1,42 @@
+import { useTranslation } from "react-i18next";
 import { Card, CardContent } from "@/components/ui/card";
 import { Briefcase } from "lucide-react";
 import paoloImg from "@/assets/paolo-brotto.jpeg";
 import elenaImg from "@/assets/elena-brotto.jpeg";
 
-const teamMembers = [
-  {
-    name: "Dott. Paolo Maria Brotto",
-    role: "Direttore Sanitario",
-    description: "Laureato in Medicina e Chirurgia all'Università Statale di Milano, specializzato in odontoiatria presso la Boston University. Dal 1993 direttore sanitario dello studio, esperto in implantologia, protesi, endodonzia, conservativa, chirurgia e ortodonzia.",
-    image: paoloImg,
-  },
-  {
-    name: "Valentina",
-    role: "Assistente alla Poltrona",
-    description: "Specializzata nell'assistenza durante i trattamenti e nella cura del paziente.",
-    image: null,
-  },
-  {
-    name: "Elena Poggi",
-    role: "Segretaria",
-    description: "Il punto di riferimento per appuntamenti e gestione amministrativa dello studio.",
-    image: elenaImg,
-  },
-];
-
 const Team = () => {
+  const { t } = useTranslation();
+
+  const teamMembers = [
+    {
+      nameKey: "team.paolo",
+      roleKey: "team.paoloRole",
+      descKey: "team.paoloDesc",
+      image: paoloImg,
+    },
+    {
+      nameKey: "team.valentina",
+      roleKey: "team.valentinaRole",
+      descKey: "team.valentinaDesc",
+      image: null,
+    },
+    {
+      nameKey: "team.elena",
+      roleKey: "team.elenaRole",
+      descKey: "team.elenaDesc",
+      image: elenaImg,
+    },
+  ];
+
   return (
     <section id="team" className="py-24 bg-background">
       <div className="container mx-auto px-4">
         <div className="text-center max-w-3xl mx-auto mb-16 animate-in fade-in slide-in-from-bottom duration-700">
           <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
-            Il Nostro Team
+            {t("team.title")}
           </h2>
           <p className="text-xl text-muted-foreground">
-            Professionisti dedicati al tuo benessere e alla salute del tuo sorriso
+            {t("team.subtitle")}
           </p>
         </div>
 
@@ -48,24 +51,24 @@ const Team = () => {
                   {member.image ? (
                     <img
                       src={member.image}
-                      alt={member.name}
+                      alt={t(member.nameKey)}
                       className="w-full h-full object-cover object-top"
                     />
                   ) : (
                     <span className="text-4xl font-bold text-primary-foreground">
-                      {member.name.charAt(0)}
+                      {t(member.nameKey).charAt(0)}
                     </span>
                   )}
                 </div>
                 <h3 className="text-2xl font-bold text-card-foreground mb-2">
-                  {member.name}
+                  {t(member.nameKey)}
                 </h3>
                 <div className="flex items-center justify-center gap-2 mb-4 text-primary">
                   <Briefcase className="w-4 h-4" />
-                  <span className="font-medium">{member.role}</span>
+                  <span className="font-medium">{t(member.roleKey)}</span>
                 </div>
                 <p className="text-muted-foreground leading-relaxed">
-                  {member.description}
+                  {t(member.descKey)}
                 </p>
               </CardContent>
             </Card>

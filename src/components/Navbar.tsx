@@ -1,9 +1,11 @@
 import { useState, useEffect } from "react";
+import { useTranslation } from "react-i18next";
 import { Button } from "@/components/ui/button";
-import { Phone, Menu, X } from "lucide-react";
+import { Phone, Menu, X, Globe } from "lucide-react";
 import logoImg from "@/assets/logo-brotto.png";
 
 const Navbar = () => {
+  const { t, i18n } = useTranslation();
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
@@ -23,13 +25,17 @@ const Navbar = () => {
     }
   };
 
+  const toggleLanguage = () => {
+    i18n.changeLanguage(i18n.language === "it" ? "en" : "it");
+  };
+
   const navLinks = [
-    { label: "Home", id: "home" },
-    { label: "Servizi", id: "servizi" },
-    { label: "Team", id: "team" },
-    { label: "Casi Clinici", id: "casi" },
-    { label: "Recensioni", id: "recensioni" },
-    { label: "Contatti", id: "contatti" },
+    { label: t("nav.home"), id: "home" },
+    { label: t("nav.services"), id: "servizi" },
+    { label: t("nav.team"), id: "team" },
+    { label: t("nav.cases"), id: "casi" },
+    { label: t("nav.reviews"), id: "recensioni" },
+    { label: t("nav.contacts"), id: "contatti" },
   ];
 
   return (
@@ -58,12 +64,20 @@ const Navbar = () => {
                 {link.label}
               </button>
             ))}
+            <button
+              onClick={toggleLanguage}
+              className="flex items-center gap-1 text-foreground hover:text-primary transition-colors font-medium"
+              title={i18n.language === "it" ? "Switch to English" : "Passa all'italiano"}
+            >
+              <Globe className="w-4 h-4" />
+              <span className="uppercase text-sm">{i18n.language === "it" ? "EN" : "IT"}</span>
+            </button>
             <Button
               onClick={() => scrollToSection("contatti")}
               className="bg-gradient-to-r from-primary to-secondary"
             >
               <Phone className="w-4 h-4 mr-2" />
-              Prenota
+              {t("nav.book")}
             </Button>
           </div>
 
@@ -88,12 +102,19 @@ const Navbar = () => {
                 {link.label}
               </button>
             ))}
+            <button
+              onClick={toggleLanguage}
+              className="flex items-center gap-2 text-foreground hover:text-primary transition-colors font-medium py-2"
+            >
+              <Globe className="w-4 h-4" />
+              <span>{i18n.language === "it" ? "English" : "Italiano"}</span>
+            </button>
             <Button
               onClick={() => scrollToSection("contatti")}
               className="w-full bg-gradient-to-r from-primary to-secondary"
             >
               <Phone className="w-4 h-4 mr-2" />
-              Prenota
+              {t("nav.book")}
             </Button>
           </div>
         )}

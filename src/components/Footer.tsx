@@ -1,6 +1,9 @@
+import { useTranslation } from "react-i18next";
 import { MapPin, Phone, Mail, Clock, Printer } from "lucide-react";
 
 const Footer = () => {
+  const { t } = useTranslation();
+
   return (
     <footer className="bg-foreground text-background py-12">
       <div className="container mx-auto px-4">
@@ -10,13 +13,12 @@ const Footer = () => {
               Brotto Studio Odontoiatrico
             </h3>
             <p className="text-background/80 leading-relaxed">
-              Dal 1970 punto di riferimento nel centro di Milano per la salute e la bellezza del
-              tuo sorriso. Certificazione ISO 9001:2015.
+              {t("footer.description")}
             </p>
           </div>
 
           <div>
-            <h4 className="text-lg font-bold mb-4 text-primary-foreground">Contatti</h4>
+            <h4 className="text-lg font-bold mb-4 text-primary-foreground">{t("footer.contacts")}</h4>
             <div className="space-y-3">
               <div className="flex items-center gap-2 text-background/80">
                 <MapPin className="w-5 h-5 flex-shrink-0" />
@@ -38,21 +40,21 @@ const Footer = () => {
           </div>
 
           <div>
-            <h4 className="text-lg font-bold mb-4 text-primary-foreground">Orari</h4>
+            <h4 className="text-lg font-bold mb-4 text-primary-foreground">{t("footer.hours")}</h4>
             <div className="space-y-2 text-background/80">
               <div className="flex items-center gap-2">
                 <Clock className="w-5 h-5 flex-shrink-0" />
-                <span>Dal Lunedì al Giovedì</span>
+                <span>{t("footer.days")}</span>
               </div>
               <p className="ml-7">8:30 - 13:00 | 14:30 - 18:00</p>
-              <p className="ml-7 italic text-background/60">Si riceve su appuntamento</p>
+              <p className="ml-7 italic text-background/60">{t("footer.byAppointment")}</p>
             </div>
           </div>
         </div>
 
         <div className="border-t border-background/20 pt-8 text-center">
           <p className="text-background/60">
-            © {new Date().getFullYear()} Brotto Studio Odontoiatrico. Tutti i diritti riservati.
+            © {new Date().getFullYear()} Brotto Studio Odontoiatrico. {t("footer.rights")}
           </p>
         </div>
       </div>

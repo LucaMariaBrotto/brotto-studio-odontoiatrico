@@ -1,30 +1,17 @@
+import { useTranslation } from "react-i18next";
 import { Card, CardContent } from "@/components/ui/card";
 import { CheckCircle2, Award } from "lucide-react";
 
-const cases = [
-  {
-    title: "Implantologia Complessa",
-    description: "Ripristino completo dell'arcata dentale con impianti multipli",
-    result: "Paziente tornato a sorridere con sicurezza",
-  },
-  {
-    title: "Ortodonzia Invisibile",
-    description: "Trattamento con allineatori trasparenti per adulti",
-    result: "Sorriso perfetto in 18 mesi",
-  },
-  {
-    title: "Riabilitazione Estetica",
-    description: "Faccette in ceramica e sbiancamento professionale",
-    result: "Trasformazione completa del sorriso",
-  },
-  {
-    title: "Parodontologia Avanzata",
-    description: "Trattamento rigenerativo delle gengive",
-    result: "Recupero completo della salute gengivale",
-  },
-];
-
 const Cases = () => {
+  const { t } = useTranslation();
+
+  const cases = [
+    { titleKey: "cases.case1Title", descKey: "cases.case1Desc", resultKey: "cases.case1Result" },
+    { titleKey: "cases.case2Title", descKey: "cases.case2Desc", resultKey: "cases.case2Result" },
+    { titleKey: "cases.case3Title", descKey: "cases.case3Desc", resultKey: "cases.case3Result" },
+    { titleKey: "cases.case4Title", descKey: "cases.case4Desc", resultKey: "cases.case4Result" },
+  ];
+
   return (
     <section id="casi" className="py-24 bg-gradient-to-b from-muted to-background">
       <div className="container mx-auto px-4">
@@ -33,10 +20,10 @@ const Cases = () => {
             <Award className="w-8 h-8 text-primary" />
           </div>
           <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
-            Casi Clinici Risolti
+            {t("cases.title")}
           </h2>
           <p className="text-xl text-muted-foreground">
-            Risultati eccellenti che testimoniano la qualità del nostro lavoro
+            {t("cases.subtitle")}
           </p>
         </div>
 
@@ -53,14 +40,14 @@ const Cases = () => {
                   </div>
                   <div>
                     <h3 className="text-xl font-bold text-card-foreground mb-2">
-                      {clinicalCase.title}
+                      {t(clinicalCase.titleKey)}
                     </h3>
                     <p className="text-muted-foreground mb-3">
-                      {clinicalCase.description}
+                      {t(clinicalCase.descKey)}
                     </p>
                     <div className="inline-flex items-center gap-2 text-primary font-medium">
                       <CheckCircle2 className="w-4 h-4" />
-                      <span>{clinicalCase.result}</span>
+                      <span>{t(clinicalCase.resultKey)}</span>
                     </div>
                   </div>
                 </div>
