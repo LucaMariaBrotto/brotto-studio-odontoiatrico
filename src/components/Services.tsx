@@ -1,49 +1,28 @@
+import { useTranslation } from "react-i18next";
 import { Card, CardContent } from "@/components/ui/card";
 import { Smile, Sparkles, Shield, Stethoscope, Gem, Heart } from "lucide-react";
 
-const services = [
-  {
-    icon: Shield,
-    title: "Igiene e Prevenzione",
-    description: "Pulizia professionale, detartrasi e controlli periodici per mantenere i tuoi denti sani.",
-  },
-  {
-    icon: Smile,
-    title: "Ortodonzia",
-    description: "Apparecchi fissi, mobili e invisibili per un sorriso perfettamente allineato.",
-  },
-  {
-    icon: Sparkles,
-    title: "Estetica Dentale",
-    description: "Sbiancamento, faccette e restauri estetici per un sorriso luminoso.",
-  },
-  {
-    icon: Stethoscope,
-    title: "Conservativa",
-    description: "Cura delle carie con materiali di ultima generazione e tecniche mini-invasive.",
-  },
-  {
-    icon: Gem,
-    title: "Implantologia",
-    description: "Impianti dentali con tecnologia digitale per sostituire i denti mancanti.",
-  },
-  {
-    icon: Heart,
-    title: "Parodontologia",
-    description: "Prevenzione e cura delle malattie gengivali per gengive sane e forti.",
-  },
-];
-
 const Services = () => {
+  const { t } = useTranslation();
+
+  const services = [
+    { icon: Shield, titleKey: "services.hygiene", descKey: "services.hygieneDesc" },
+    { icon: Smile, titleKey: "services.orthodontics", descKey: "services.orthodonticsDesc" },
+    { icon: Sparkles, titleKey: "services.aesthetics", descKey: "services.aestheticsDesc" },
+    { icon: Stethoscope, titleKey: "services.conservative", descKey: "services.conservativeDesc" },
+    { icon: Gem, titleKey: "services.implantology", descKey: "services.implantologyDesc" },
+    { icon: Heart, titleKey: "services.periodontics", descKey: "services.periodonticsDesc" },
+  ];
+
   return (
     <section id="servizi" className="py-24 bg-gradient-to-b from-muted to-background">
       <div className="container mx-auto px-4">
         <div className="text-center max-w-3xl mx-auto mb-16 animate-in fade-in slide-in-from-bottom duration-700">
           <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
-            I Nostri Servizi
+            {t("services.title")}
           </h2>
           <p className="text-xl text-muted-foreground">
-            Offriamo una gamma completa di trattamenti odontoiatrici con le tecnologie più avanzate
+            {t("services.subtitle")}
           </p>
         </div>
 
@@ -58,10 +37,10 @@ const Services = () => {
                   <service.icon className="w-8 h-8 text-primary-foreground" />
                 </div>
                 <h3 className="text-2xl font-bold text-card-foreground mb-3">
-                  {service.title}
+                  {t(service.titleKey)}
                 </h3>
                 <p className="text-muted-foreground leading-relaxed">
-                  {service.description}
+                  {t(service.descKey)}
                 </p>
               </CardContent>
             </Card>
