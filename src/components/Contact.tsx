@@ -78,6 +78,7 @@ const Contact = () => {
                     <span className="text-xl font-semibold text-card-foreground">{openingHours.afternoon}</span>
                   </div>
                 </div>
+                <p className="text-muted-foreground italic mt-4">Si riceve su appuntamento</p>
               </div>
             </CardContent>
           </Card>
