@@ -44,7 +44,7 @@ const Navbar = () => {
             onClick={() => scrollToSection("home")}
             className="hover:opacity-80 transition-opacity"
           >
-            <img src={logoImg} alt="Brotto Studio Odontoiatrico" className="h-10" />
+            <img src={logoImg} alt="Brotto Studio Odontoiatrico" className="h-14" />
           </button>
 
           {/* Desktop Menu */}

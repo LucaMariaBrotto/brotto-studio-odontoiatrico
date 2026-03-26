@@ -15,7 +15,7 @@ const contactInfo = [{
   content: "info@brottostudio.it"
 }];
 const openingHours = {
-  days: "Lunedì - Venerdì",
+  days: "Dal Lunedì al Giovedì",
   morning: "8:30 - 13:00",
   afternoon: "14:30 - 18:00"
 };
@@ -78,6 +78,7 @@ const Contact = () => {
                     <span className="text-xl font-semibold text-card-foreground">{openingHours.afternoon}</span>
                   </div>
                 </div>
+                <p className="text-muted-foreground italic mt-4">Si riceve su appuntamento</p>
               </div>
             </CardContent>
           </Card>
