@@ -15,7 +15,7 @@ const contactInfo = [{
   content: "info@brottostudio.it"
 }];
 const openingHours = {
-  days: "Lunedì - Venerdì",
+  days: "Dal Lunedì al Giovedì",
   morning: "8:30 - 13:00",
   afternoon: "14:30 - 18:00"
 };
