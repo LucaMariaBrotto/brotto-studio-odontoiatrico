@@ -36,7 +36,7 @@ export default {
     paolo: "Dott. Paolo Maria Brotto",
     paoloRole: "Direttore Sanitario",
     paoloDesc: "Laureato in Medicina e Chirurgia all'Università Statale di Milano, specializzato in odontoiatria presso la Boston University. Dal 1993 direttore sanitario dello studio, esperto in implantologia, protesi, endodonzia, conservativa, chirurgia e ortodonzia.",
-    valentina: "Valentina",
+    valentina: "Valentina Del Giudice",
     valentinaRole: "Assistente alla Poltrona",
     valentinaDesc: "Specializzata nell'assistenza durante i trattamenti e nella cura del paziente.",
     elena: "Elena Poggi",
