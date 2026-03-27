@@ -12,7 +12,7 @@ const Contact = () => {
   const contactItems = [
     { icon: MapPin, titleKey: "contact.address", content: "Via Unione 2, Milano", href: googleMapsUrl, external: true },
     { icon: Phone, titleKey: "contact.phone", content: "02 86462283", href: "tel:0286462283", external: false },
-    { icon: Printer, titleKey: "contact.fax", content: "02 8690627", href: "tel:028690627", external: false },
+    { icon: Phone, titleKey: "contact.phone2", content: "02 8690627", href: "tel:028690627", external: false },
     { icon: Mail, titleKey: "contact.email", content: "info@brottostudio.it", href: "mailto:info@brottostudio.it", external: false },
   ];
 
