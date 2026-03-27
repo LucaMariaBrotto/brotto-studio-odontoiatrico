@@ -3,6 +3,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Briefcase } from "lucide-react";
 import paoloImg from "@/assets/paolo-brotto.jpeg";
 import elenaImg from "@/assets/elena-brotto.jpeg";
+import valentinaImg from "@/assets/valentina.jpeg";
 
 const Team = () => {
   const { t } = useTranslation();
@@ -18,7 +19,7 @@ const Team = () => {
       nameKey: "team.valentina",
       roleKey: "team.valentinaRole",
       descKey: "team.valentinaDesc",
-      image: null,
+      image: valentinaImg,
     },
     {
       nameKey: "team.elena",
