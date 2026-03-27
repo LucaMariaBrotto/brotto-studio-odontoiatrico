@@ -19,7 +19,7 @@ const Team = () => {
       nameKey: "team.valentina",
       roleKey: "team.valentinaRole",
       descKey: "team.valentinaDesc",
-      image: null,
+      image: valentinaImg,
     },
     {
       nameKey: "team.elena",
