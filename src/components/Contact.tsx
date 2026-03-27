@@ -2,7 +2,7 @@ import { useTranslation } from "react-i18next";
 import { Card, CardContent } from "@/components/ui/card";
 import { Train, Bus, TrainFront } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { MapPin, Phone, Mail, Clock, Printer } from "lucide-react";
+import { MapPin, Phone, Mail, Clock } from "lucide-react";
 
 const googleMapsUrl = "https://www.google.com/maps/place/Brotto+Studio+Odontoiatrico/@45.4624472,9.1843558,17z/data=!3m1!4b1!4m6!3m5!1s0x4786c6ab8fb9ff55:0x1c293e0989737ece!8m2!3d45.4624472!4d9.1869307!16s%2Fg%2F1tzghj1c";
 
@@ -12,7 +12,7 @@ const Contact = () => {
   const contactItems = [
     { icon: MapPin, titleKey: "contact.address", content: "Via Unione 2, Milano", href: googleMapsUrl, external: true },
     { icon: Phone, titleKey: "contact.phone", content: "02 86462283", href: "tel:0286462283", external: false },
-    { icon: Printer, titleKey: "contact.fax", content: "02 8690627", href: "tel:028690627", external: false },
+    { icon: Phone, titleKey: "contact.phone2", content: "02 8690627", href: "tel:028690627", external: false },
     { icon: Mail, titleKey: "contact.email", content: "info@brottostudio.it", href: "mailto:info@brottostudio.it", external: false },
   ];
 
