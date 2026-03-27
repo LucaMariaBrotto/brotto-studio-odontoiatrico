@@ -1,5 +1,5 @@
 import { useTranslation } from "react-i18next";
-import { MapPin, Phone, Mail, Clock, Printer } from "lucide-react";
+import { MapPin, Phone, Mail, Clock } from "lucide-react";
 
 const Footer = () => {
   const { t } = useTranslation();
