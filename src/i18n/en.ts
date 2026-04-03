@@ -30,7 +30,7 @@ export default {
     periodontics: "Periodontics",
     periodonticsDesc: "Prevention and treatment of gum diseases for healthy and strong gums.",
     prosthetics: "Prosthetics",
-    prostheticsDesc: "Fixed and removable prostheses to restore the functionality and aesthetics of your smile.",
+    prostheticsDesc: "Custom-made artificial devices that replace missing or compromised teeth.",
     endodontics: "Endodontics",
     endodonticsDesc: "Root canal treatments to save compromised teeth and relieve pain.",
     pedodontics: "Pedodontics",
