@@ -1,6 +1,6 @@
 import { useTranslation } from "react-i18next";
 import { Card, CardContent } from "@/components/ui/card";
-import { Smile, Sparkles, Shield, Stethoscope, Gem, Heart } from "lucide-react";
+import { Smile, Sparkles, Shield, Stethoscope, Gem, Heart, Crown, CircleDot, Baby } from "lucide-react";
 
 const Services = () => {
   const { t } = useTranslation();
@@ -12,6 +12,9 @@ const Services = () => {
     { icon: Stethoscope, titleKey: "services.conservative", descKey: "services.conservativeDesc" },
     { icon: Gem, titleKey: "services.implantology", descKey: "services.implantologyDesc" },
     { icon: Heart, titleKey: "services.periodontics", descKey: "services.periodonticsDesc" },
+    { icon: Crown, titleKey: "services.prosthetics", descKey: "services.prostheticsDesc" },
+    { icon: CircleDot, titleKey: "services.endodontics", descKey: "services.endodonticsDesc" },
+    { icon: Baby, titleKey: "services.pedodontics", descKey: "services.pedodonticsDesc" },
   ];
 
   return (
