@@ -56,7 +56,7 @@ const Team = () => {
                     <img
                       src={member.image}
                       alt={t(member.nameKey)}
-                      className="w-full h-full object-cover object-top"
+                      className={`w-full h-full object-cover ${member.imageClass}`}
                     />
                   ) : (
                     <span className="text-4xl font-bold text-primary-foreground">
