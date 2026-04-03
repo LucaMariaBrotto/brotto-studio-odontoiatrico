@@ -30,7 +30,7 @@ export default {
     periodontics: "Parodontologia",
     periodonticsDesc: "Prevenzione e cura delle malattie gengivali per gengive sane e forti.",
     prosthetics: "Protesi",
-    prostheticsDesc: "Protesi fisse e mobili per ripristinare la funzionalità e l'estetica del sorriso.",
+    prostheticsDesc: "Manufatti artificiali su misura che sostituiscono denti mancanti o compromessi.",
     endodontics: "Endodonzia",
     endodonticsDesc: "Trattamenti canalari per salvare i denti compromessi e alleviare il dolore.",
     pedodontics: "Pedodonzia",
