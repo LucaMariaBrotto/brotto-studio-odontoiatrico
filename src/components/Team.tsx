@@ -14,18 +14,21 @@ const Team = () => {
       roleKey: "team.paoloRole",
       descKey: "team.paoloDesc",
       image: paoloImg,
+      imageClass: "object-top",
     },
     {
       nameKey: "team.valentina",
       roleKey: "team.valentinaRole",
       descKey: "team.valentinaDesc",
       image: valentinaImg,
+      imageClass: "object-[center_20%]",
     },
     {
       nameKey: "team.elena",
       roleKey: "team.elenaRole",
       descKey: "team.elenaDesc",
       image: elenaImg,
+      imageClass: "object-top",
     },
   ];
 
