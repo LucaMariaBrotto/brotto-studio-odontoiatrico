@@ -53,6 +53,7 @@ const Services = () => {
                       src={service.image}
                       alt={t(service.titleKey)}
                       className="w-10 h-10 object-contain"
+                      style={{ filter: 'sepia(1) saturate(3) hue-rotate(180deg) brightness(0.7)' }}
                     />
                   ) : (
                     <service.icon className="w-8 h-8 text-primary" />
