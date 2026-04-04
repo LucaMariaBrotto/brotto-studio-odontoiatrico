@@ -47,12 +47,13 @@ const Services = () => {
               className="group hover:shadow-strong transition-all duration-300 hover:-translate-y-2 border-border bg-card"
             >
               <CardContent className="p-8 text-center">
-                <div className={`w-16 h-16 mx-auto mb-6 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform duration-300 overflow-hidden ${service.image ? 'bg-muted' : 'bg-gradient-to-br from-primary to-secondary'}`}>
+                <div className="w-16 h-16 mx-auto mb-6 rounded-full bg-gradient-to-br from-primary to-secondary flex items-center justify-center group-hover:scale-110 transition-transform duration-300 overflow-hidden">
                   {service.image ? (
                     <img
                       src={service.image}
                       alt={t(service.titleKey)}
-                      className="w-12 h-12 object-contain"
+                      className="w-9 h-9 object-contain"
+                      style={{ filter: 'brightness(0) invert(1)' }}
                     />
                   ) : (
                     <service.icon className="w-8 h-8 text-primary-foreground" />
