@@ -47,12 +47,12 @@ const Services = () => {
               className="group hover:shadow-strong transition-all duration-300 hover:-translate-y-2 border-border bg-card"
             >
               <CardContent className="p-8 text-center">
-                <div className="w-16 h-16 mx-auto mb-6 rounded-full bg-gradient-to-br from-primary to-secondary flex items-center justify-center group-hover:scale-110 transition-transform duration-300 overflow-hidden">
+                <div className={`w-16 h-16 mx-auto mb-6 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform duration-300 overflow-hidden ${service.image ? 'bg-muted' : 'bg-gradient-to-br from-primary to-secondary'}`}>
                   {service.image ? (
                     <img
                       src={service.image}
                       alt={t(service.titleKey)}
-                      className="w-10 h-10 object-contain brightness-0 invert"
+                      className="w-12 h-12 object-contain"
                     />
                   ) : (
                     <service.icon className="w-8 h-8 text-primary-foreground" />
