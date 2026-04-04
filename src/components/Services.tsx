@@ -37,15 +37,7 @@ const Services = () => {
             >
               <CardContent className="p-8 text-center">
                 <div className="w-16 h-16 mx-auto mb-6 rounded-full bg-gradient-to-br from-primary to-secondary flex items-center justify-center group-hover:scale-110 transition-transform duration-300 overflow-hidden">
-                  {service.image ? (
-                    <img
-                      src={service.image}
-                      alt={t(service.titleKey)}
-                      className="w-10 h-10 object-contain brightness-0 invert"
-                    />
-                  ) : (
-                    <service.icon className="w-8 h-8 text-primary-foreground" />
-                  )}
+                  <service.icon className="w-8 h-8 text-primary-foreground" />
                 </div>
                 <h3 className="text-2xl font-bold text-card-foreground mb-3">
                   {t(service.titleKey)}
