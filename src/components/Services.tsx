@@ -1,20 +1,34 @@
 import { useTranslation } from "react-i18next";
 import { Card, CardContent } from "@/components/ui/card";
-import { Shield, Smile, Sparkles, Hammer, CircleDot, Heart, Crown, Focus, Baby } from "lucide-react";
+import { Shield, Smile, Sparkles } from "lucide-react";
+import iconConservative from "@/assets/icon-conservative.png";
+import iconEndodontics from "@/assets/icon-endodontics.png";
+import iconImplantology from "@/assets/icon-implantology.png";
+import iconPeriodontics from "@/assets/icon-periodontics.png";
+import iconPedodontics from "@/assets/icon-pedodontics.png";
+import iconProsthetics from "@/assets/icon-prosthetics.png";
+
+type ServiceItem = {
+  titleKey: string;
+  descKey: string;
+} & (
+  | { icon: React.ComponentType<{ className?: string }>; image?: never }
+  | { image: string; icon?: never }
+);
 
 const Services = () => {
   const { t } = useTranslation();
 
-  const services = [
+  const services: ServiceItem[] = [
     { icon: Shield, titleKey: "services.hygiene", descKey: "services.hygieneDesc" },
     { icon: Smile, titleKey: "services.orthodontics", descKey: "services.orthodonticsDesc" },
     { icon: Sparkles, titleKey: "services.aesthetics", descKey: "services.aestheticsDesc" },
-    { icon: Hammer, titleKey: "services.conservative", descKey: "services.conservativeDesc" },
-    { icon: CircleDot, titleKey: "services.implantology", descKey: "services.implantologyDesc" },
-    { icon: Heart, titleKey: "services.periodontics", descKey: "services.periodonticsDesc" },
-    { icon: Crown, titleKey: "services.prosthetics", descKey: "services.prostheticsDesc" },
-    { icon: Focus, titleKey: "services.endodontics", descKey: "services.endodonticsDesc" },
-    { icon: Baby, titleKey: "services.pedodontics", descKey: "services.pedodonticsDesc" },
+    { image: iconConservative, titleKey: "services.conservative", descKey: "services.conservativeDesc" },
+    { image: iconImplantology, titleKey: "services.implantology", descKey: "services.implantologyDesc" },
+    { image: iconPeriodontics, titleKey: "services.periodontics", descKey: "services.periodonticsDesc" },
+    { image: iconProsthetics, titleKey: "services.prosthetics", descKey: "services.prostheticsDesc" },
+    { image: iconEndodontics, titleKey: "services.endodontics", descKey: "services.endodonticsDesc" },
+    { image: iconPedodontics, titleKey: "services.pedodontics", descKey: "services.pedodonticsDesc" },
   ];
 
   return (
@@ -36,9 +50,15 @@ const Services = () => {
               className="group hover:shadow-strong transition-all duration-300 hover:-translate-y-2 border-border bg-card"
             >
               <CardContent className="p-8 text-center">
-                <div className="w-16 h-16 mx-auto mb-6 rounded-full bg-gradient-to-br from-primary to-secondary flex items-center justify-center group-hover:scale-110 transition-transform duration-300 overflow-hidden">
-                  <service.icon className="w-8 h-8 text-primary-foreground" />
-                </div>
+                {service.image ? (
+                  <div className="w-16 h-16 mx-auto mb-6 rounded-full overflow-hidden group-hover:scale-110 transition-transform duration-300">
+                    <img src={service.image} alt="" className="w-full h-full object-cover" />
+                  </div>
+                ) : (
+                  <div className="w-16 h-16 mx-auto mb-6 rounded-full bg-gradient-to-br from-primary to-secondary flex items-center justify-center group-hover:scale-110 transition-transform duration-300 overflow-hidden">
+                    <service.icon className="w-8 h-8 text-primary-foreground" />
+                  </div>
+                )}
                 <h3 className="text-2xl font-bold text-card-foreground mb-3">
                   {t(service.titleKey)}
                 </h3>
