@@ -51,8 +51,8 @@ const Services = () => {
             >
               <CardContent className="p-8 text-center">
                 {service.image ? (
-                  <div className="w-16 h-16 mx-auto mb-6 rounded-full overflow-hidden group-hover:scale-110 transition-transform duration-300">
-                    <img src={service.image} alt="" className="w-full h-full object-cover" />
+                  <div className="w-16 h-16 mx-auto mb-6 rounded-full bg-gradient-to-br from-primary to-secondary flex items-center justify-center group-hover:scale-110 transition-transform duration-300 overflow-hidden">
+                    <img src={service.image} alt="" className="w-10 h-10 object-contain" />
                   </div>
                 ) : (
                   <div className="w-16 h-16 mx-auto mb-6 rounded-full bg-gradient-to-br from-primary to-secondary flex items-center justify-center group-hover:scale-110 transition-transform duration-300 overflow-hidden">
