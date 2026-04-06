@@ -15,6 +15,7 @@ type ServiceItem = {
   image: string;
   titleKey: string;
   descKey: string;
+  hasOwnBackground?: boolean;
 };
 
 const Services = () => {
