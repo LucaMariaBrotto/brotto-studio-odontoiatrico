@@ -1,4 +1,5 @@
 import { useTranslation } from "react-i18next";
+import { useNavigate } from "react-router-dom";
 import { Card, CardContent } from "@/components/ui/card";
 import { Briefcase } from "lucide-react";
 import paoloImg from "@/assets/paolo-brotto.jpeg";
@@ -7,6 +8,7 @@ import valentinaImg from "@/assets/valentina.jpeg";
 
 const Team = () => {
   const { t } = useTranslation();
+  const navigate = useNavigate();
 
   const teamMembers = [
     {
@@ -15,6 +17,7 @@ const Team = () => {
       descKey: "team.paoloDesc",
       image: paoloImg,
       imageClass: "object-top",
+      link: "/about-paolo",
     },
     {
       nameKey: "team.valentina",
@@ -64,7 +67,10 @@ const Team = () => {
                     </span>
                   )}
                 </div>
-                <h3 className="text-2xl font-bold text-card-foreground mb-2">
+                <h3
+                  className={`text-2xl font-bold text-card-foreground mb-2 ${member.link ? "cursor-pointer hover:text-primary transition-colors underline-offset-4 hover:underline" : ""}`}
+                  onClick={() => member.link && navigate(member.link)}
+                >
                   {t(member.nameKey)}
                 </h3>
                 <div className="flex items-center justify-center gap-2 mb-4 text-primary">
