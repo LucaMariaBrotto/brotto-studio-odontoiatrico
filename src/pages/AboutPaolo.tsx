@@ -81,7 +81,7 @@ const AboutPaolo = () => {
             </Card>
 
             {/* Lingue e Famiglia */}
-            <div className="space-y-8">
+            <div className="space-y-4">
               <Card className="border-border bg-card">
                 <CardContent className="p-8">
                   <div className="flex items-center gap-3 mb-6">
