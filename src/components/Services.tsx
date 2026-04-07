@@ -51,11 +51,14 @@ const Services = () => {
               className="group hover:shadow-strong transition-all duration-300 hover:-translate-y-2 border-border bg-card"
             >
               <CardContent className="p-8 text-center">
-                <div className="w-20 h-20 mx-auto mb-6 rounded-full overflow-hidden group-hover:scale-110 transition-transform duration-300">
+                <div className="w-20 h-20 mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
                   <img
                     src={service.image}
                     alt={t(service.titleKey)}
-                    className="w-full h-full object-cover"
+                    loading="lazy"
+                    width={80}
+                    height={80}
+                    className="w-20 h-20 object-contain"
                   />
                 </div>
                 <h3 className="text-2xl font-bold text-card-foreground mb-3">
