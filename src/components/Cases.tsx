@@ -8,6 +8,9 @@ import caseOrtho1 from "@/assets/case-ortho-1.jpg";
 import caseOrtho2 from "@/assets/case-ortho-2.jpg";
 import caseOrtho3 from "@/assets/case-ortho-3.jpg";
 import caseOrtho4 from "@/assets/case-ortho-4.jpg";
+import caseProsthetics1 from "@/assets/case-prosthetics-1.jpg";
+import caseProsthetics2 from "@/assets/case-prosthetics-2.jpg";
+import caseProsthetics3 from "@/assets/case-prosthetics-3.jpg";
 
 const Cases = () => {
   const { t } = useTranslation();
@@ -23,7 +26,7 @@ const Cases = () => {
       icon: iconProsthetics,
       titleKey: "cases.prosthetics",
       descKey: "cases.prostheticsDesc",
-      photos: [] as string[],
+      photos: [caseProsthetics1, caseProsthetics2, caseProsthetics3],
     },
     {
       icon: iconOrthodontics,
