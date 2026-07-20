@@ -58,7 +58,7 @@ export default {
     prostheticsDesc: "Custom prosthetic rehabilitations to replace missing or compromised teeth with natural-looking results.",
     orthodontics: "Orthodontics",
     orthodonticsDesc: "Correction of malocclusions and dental misalignments for a harmonious and functional smile.",
-    beforeAfter: "Before / After",
+    beforeAfter: " ",
   },
   reviews: {
     title: "Google Reviews",
