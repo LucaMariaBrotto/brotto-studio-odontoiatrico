@@ -58,7 +58,7 @@ export default {
     prostheticsDesc: "Riabilitazioni protesiche su misura per sostituire denti mancanti o compromessi con risultati naturali.",
     orthodontics: "Ortodonzia",
     orthodonticsDesc: "Correzione di malocclusioni e disallineamenti dentali per un sorriso armonioso e funzionale.",
-    beforeAfter: "Prima / Dopo",
+    beforeAfter: " ",
   },
   reviews: {
     title: "Recensioni Google",
