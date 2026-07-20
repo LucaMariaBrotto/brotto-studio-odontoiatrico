@@ -24,18 +24,21 @@ const Cases = () => {
       titleKey: "cases.implantology",
       descKey: "cases.implantologyDesc",
       photos: [caseImplant1.url, caseImplant2.url, caseImplant3.url],
+      showBeforeAfter: false,
     },
     {
       icon: iconProsthetics,
       titleKey: "cases.prosthetics",
       descKey: "cases.prostheticsDesc",
       photos: [caseProsthetics1, caseProsthetics2, caseProsthetics3],
+      showBeforeAfter: true,
     },
     {
       icon: iconOrthodontics,
       titleKey: "cases.orthodontics",
       descKey: "cases.orthodonticsDesc",
       photos: [caseOrtho1, caseOrtho2, caseOrtho3, caseOrtho4],
+      showBeforeAfter: true,
     },
   ];
 
