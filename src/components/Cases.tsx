@@ -85,16 +85,18 @@ const Cases = () => {
 
                 {area.photos.length > 0 && (
                   <div>
-                    <p className="text-sm font-semibold text-primary mb-3">
-                      {t("cases.beforeAfter")}
-                    </p>
+                    {area.showBeforeAfter && (
+                      <p className="text-sm font-semibold text-primary mb-3">
+                        {t("cases.beforeAfter")}
+                      </p>
+                    )}
                     <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
                       {area.photos.map((photo, i) => (
-                        <div key={i} className="rounded-lg overflow-hidden border border-border">
+                        <div key={i} className="rounded-lg overflow-hidden border border-border aspect-square bg-muted">
                           <img
                             src={photo}
-                            alt={`${t(area.titleKey)} - ${t("cases.beforeAfter")} ${i + 1}`}
-                            className="w-full h-auto object-cover"
+                            alt={`${t(area.titleKey)} ${i + 1}`}
+                            className="w-full h-full object-cover"
                             loading="lazy"
                           />
                         </div>
