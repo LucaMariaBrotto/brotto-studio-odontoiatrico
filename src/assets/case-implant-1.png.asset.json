@@ -1,11 +1,11 @@
 {
-  "version": 1,
   "asset_id": "043781d9-f763-4634-96ce-098510ba6548",
-  "project_id": "7cb5b7b8-f8d2-4510-a372-3d684126796c",
-  "url": "/__l5e/assets-v1/043781d9-f763-4634-96ce-098510ba6548/case-implant-1.png",
-  "r2_key": "a/v1/7cb5b7b8-f8d2-4510-a372-3d684126796c/043781d9-f763-4634-96ce-098510ba6548/case-implant-1.png",
-  "original_filename": "case-implant-1.png",
-  "size": 1305347,
   "content_type": "image/png",
-  "created_at": "2026-07-20T10:39:39Z"
+  "created_at": "2026-07-20T10:39:39Z",
+  "original_filename": "case-implant-1.png",
+  "project_id": "49852aa9-df7c-40d0-99dd-d9d772ce76f1",
+  "r2_key": "a/v1/49852aa9-df7c-40d0-99dd-d9d772ce76f1/043781d9-f763-4634-96ce-098510ba6548/case-implant-1.png",
+  "size": 1305347,
+  "url": "/__l5e/assets-v1/043781d9-f763-4634-96ce-098510ba6548/case-implant-1.png",
+  "version": 1
 }
