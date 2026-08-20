@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import { Button } from "@/components/ui/button";
 import { Phone, Menu, X, Globe } from "lucide-react";
-import logoImg from "@/assets/logo-brotto.png";
+import logoAsset from "@/assets/logo-brotto.png.asset.json";
 
 const Navbar = () => {
   const { t, i18n } = useTranslation();
