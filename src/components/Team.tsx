@@ -77,7 +77,7 @@ const Team = () => {
                   <Briefcase className="w-4 h-4" />
                   <span className="font-medium">{t(member.roleKey)}</span>
                 </div>
-                <p className="text-muted-foreground leading-relaxed">
+                <p className="text-muted-foreground leading-relaxed whitespace-pre-line">
                   {t(member.descKey)}
                 </p>
               </CardContent>
