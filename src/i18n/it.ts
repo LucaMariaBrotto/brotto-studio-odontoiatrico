@@ -41,7 +41,7 @@ export default {
     subtitle: "Professionisti dedicati al tuo benessere e alla salute del tuo sorriso",
     paolo: "Dott. Paolo Maria Brotto",
     paoloRole: "Direttore Sanitario",
-    paoloDesc: "Laureato in Medicina e Chirurgia e specializzato in odontostomatologia all'Università Statale di Milano.\nMaster in ortodonzia presso la Boston University. Dal 1993 direttore sanitario dello studio, esperto in implantologia, protesi, endodonzia, conservativa, chirurgia e ortodonzia.",
+    paoloDesc: "Laureato in Medicina e Chirurgia e specializzato in odontostomatologia all'Università Statale di Milano. Master in ortodonzia presso la Boston University. Master in parodontologia presso l'Ospedale Galeazzi a Milano.\nDal 1993 direttore sanitario dello studio, esperto in implantologia, protesi, endodonzia, conservativa, chirurgia e ortodonzia.",
     valentina: "Valentina Del Giudice",
     valentinaRole: "Assistente alla Poltrona",
     valentinaDesc: "Specializzata nell'assistenza durante i trattamenti e nella cura del paziente.",
