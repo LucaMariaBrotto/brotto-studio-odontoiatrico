@@ -91,7 +91,7 @@ const Cases = () => {
                           <img
                             src={photo}
                             alt={`${t(area.titleKey)} - ${t("cases.beforeAfter")} ${i + 1}`}
-                            className="w-full h-auto object-cover"
+                            className="w-full h-auto object-cover transition-transform duration-300 hover:scale-110"
                             loading="lazy"
                           />
                         </div>
