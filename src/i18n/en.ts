@@ -41,7 +41,7 @@ export default {
     subtitle: "Professionals dedicated to your well-being and the health of your smile",
     paolo: "Dr. Paolo Maria Brotto",
     paoloRole: "Medical Director",
-    paoloDesc: "Graduated in Medicine and Surgery and specialized in odontostomatology at the University of Milan.\nMaster's in Orthodontics at Boston University. Medical director of the practice since 1993, expert in implantology, prosthetics, endodontics, restorative dentistry, surgery and orthodontics.",
+    paoloDesc: "Graduated in Medicine and Surgery and specialized in odontostomatology at the University of Milan. Master's in Orthodontics at Boston University. Master's in Periodontology at Galeazzi Hospital in Milan.\nMedical director of the practice since 1993, expert in implantology, prosthetics, endodontics, restorative dentistry, surgery and orthodontics.",
     valentina: "Valentina Del Giudice",
     valentinaRole: "Dental Assistant",
     valentinaDesc: "Specialized in treatment assistance and patient care.",
