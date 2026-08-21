@@ -136,8 +136,8 @@ export default {
     back: "Back to Home",
     owner: {
       title: "Data Controller",
-      name: "Brotto Studio Odontoiatrico",
-      address: "Via Unione 2, 20122 Milan, Italy",
+      name: "Brotto Studio Odontoiatrico (individual practice)",
+      address: "Via Unione 2, 20122 Milan, Italy – VAT 05377030969",
       email: "Email: info@brottostudio.it",
       phone: "Phone: 02 86462283",
     },
