@@ -52,10 +52,16 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="border-t border-background/20 pt-8 text-center">
+        <div className="border-t border-background/20 pt-8 flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-background/60">
             © {new Date().getFullYear()} Brotto Studio Odontoiatrico. {t("footer.rights")}
           </p>
+          <a
+            href="/privacy"
+            className="text-background/60 hover:text-background transition-colors"
+          >
+            {t("footer.privacyLink")}
+          </a>
         </div>
       </div>
     </footer>
