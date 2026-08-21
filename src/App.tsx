@@ -7,6 +7,8 @@ import Index from "./pages/Index";
 import AboutPaolo from "./pages/AboutPaolo";
 import Privacy from "./pages/Privacy";
 import NotFound from "./pages/NotFound";
+import CookieBanner from "./components/CookieBanner";
+
 
 
 const queryClient = new QueryClient();
