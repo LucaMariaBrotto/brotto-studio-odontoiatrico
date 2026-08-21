@@ -139,7 +139,7 @@ var en_default = {
     byAppointment: "By appointment only",
     rights: "All rights reserved.",
     privacy: "Privacy Policy",
-    privacyLink: "Privacy"
+    privacyLink: "Privacy Policy"
   },
   privacy: {
     title: "Privacy Policy",

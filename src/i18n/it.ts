@@ -128,7 +128,7 @@ export default {
     byAppointment: "Si riceve su appuntamento",
     rights: "Tutti i diritti riservati.",
     privacy: "Privacy Policy",
-    privacyLink: "Privacy",
+    privacyLink: "Privacy Policy",
   },
   privacy: {
     title: "Privacy Policy",
