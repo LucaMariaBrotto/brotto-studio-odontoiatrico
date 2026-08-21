@@ -127,5 +127,47 @@ export default {
     days: "Dal Lunedì al Giovedì",
     byAppointment: "Si riceve su appuntamento",
     rights: "Tutti i diritti riservati.",
+    privacy: "Privacy Policy",
+    privacyLink: "Privacy",
+  },
+  privacy: {
+    title: "Privacy Policy",
+    subtitle: "Informativa sul trattamento dei dati personali",
+    back: "Torna alla Home",
+    owner: {
+      title: "Titolare del trattamento",
+      name: "Brotto Studio Odontoiatrico",
+      address: "Via Unione 2, 20122 Milano (MI)",
+      email: "Email: info@brottostudio.it",
+      phone: "Telefono: 02 86462283",
+    },
+    data: {
+      title: "Dati personali raccolti",
+      content: "Raccogliamo i dati personali che ci fornisci direttamente quando ci contatti via telefono o email per prendere un appuntamento o chiedere informazioni (es. nome, cognome, numero di telefono, indirizzo email).\n\nQuando visiti il sito, possiamo raccogliere automaticamente dati di navigazione come l'indirizzo IP, il tipo di browser, il sistema operativo e le pagine visitate, tramite i servizi tecnici utilizzati per la visualizzazione delle mappe e delle recensioni.",
+    },
+    purpose: {
+      title: "Finalità del trattamento",
+      content: "I dati sono trattati per:\n\n• rispondere alle richieste di informazioni e prenotazioni;\n• gestire gli appuntamenti e i rapporti con i pazienti;\n• adempiere agli obblighi di legge, contabili e fiscali;\n• garantire la sicurezza e il corretto funzionamento del sito.",
+    },
+    legal: {
+      title: "Base giuridica e conservazione",
+      content: "Il trattamento dei dati personali si basa sull'esecuzione di misure precontrattuali su richiesta dell'interessato, sull'adempimento di obblighi legali e sul perseguimento del legittimo interesse del titolare a gestire il proprio studio.\n\nI dati sono conservati per il tempo necessario alle finalità indicate e comunque nei termini previsti dalla normativa applicabile. I dati sanitari sono trattati con le modalità previste per le categorie particolari di dati personali.",
+    },
+    cookies: {
+      title: "Cookie e tecnologie simili",
+      content: "Questo sito utilizza esclusivamente cookie tecnici necessari al funzionamento del sito e alla memorizzazione della lingua selezionata dall'utente. Non utilizziamo cookie di profilazione, né strumenti di analisi o tracciamento della navigazione.\n\nSe in futuro verranno aggiunti servizi di analytics o marketing, verrà mostrato un banner per la gestione del consenso ai cookie.",
+    },
+    thirdParties: {
+      title: "Servizi di terze parti",
+      content: "Il sito utilizza i seguenti servizi di terze parti:\n\n• Google Maps / Google Reviews: per la visualizzazione della posizione dello studio e delle recensioni. Questi servizi possono utilizzare cookie o tecnologie di tracciamento secondo le proprie policy. Ti invitiamo a consultare l'informativa privacy di Google.\n\n• Hosting del sito: i dati di navigazione transitano sui server della piattaforma di hosting utilizzata per il sito.",
+    },
+    rights: {
+      title: "Diritti degli interessati",
+      content: "Hai diritto di:\n\n• accedere ai tuoi dati personali;\n• chiederne la rettifica o la cancellazione;\n• chiedere la limitazione del trattamento;\n• opporti al trattamento;\n• richiedere la portabilità dei dati.\n\nPer esercitare i tuoi diritti puoi scrivere a info@brottostudio.it. Hai inoltre diritto di proporre reclamo all'Autorità Garante per la protezione dei dati personali.",
+    },
+    changes: {
+      title: "Modifiche all'informativa",
+      content: "La presente informativa può essere aggiornata in caso di modifiche normative o organizzative. Ti invitiamo a consultare periodicamente questa pagina.",
+    },
   },
 };
