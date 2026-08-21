@@ -137,7 +137,49 @@ var en_default = {
     hours: "Hours",
     days: "Monday to Thursday",
     byAppointment: "By appointment only",
-    rights: "All rights reserved."
+    rights: "All rights reserved.",
+    privacy: "Privacy Policy",
+    privacyLink: "Privacy"
+  },
+  privacy: {
+    title: "Privacy Policy",
+    subtitle: "Information on the processing of personal data",
+    back: "Back to Home",
+    owner: {
+      title: "Data Controller",
+      name: "Brotto Studio Odontoiatrico",
+      address: "Via Unione 2, 20122 Milan, Italy",
+      email: "Email: info@brottostudio.it",
+      phone: "Phone: 02 86462283"
+    },
+    data: {
+      title: "Personal data collected",
+      content: "We collect personal data that you provide directly when you contact us by phone or email to make an appointment or request information (e.g., name, surname, phone number, email address).\n\nWhen you visit the site, we may automatically collect browsing data such as IP address, browser type, operating system, and pages visited, through the technical services used to display maps and reviews."
+    },
+    purpose: {
+      title: "Purpose of processing",
+      content: "Data is processed for the following purposes:\n\n\u2022 responding to information and booking requests;\n\u2022 managing appointments and patient relationships;\n\u2022 fulfilling legal, accounting, and tax obligations;\n\u2022 ensuring the security and proper functioning of the site."
+    },
+    legal: {
+      title: "Legal basis and retention",
+      content: "The processing of personal data is based on the performance of pre-contractual measures at the request of the data subject, compliance with legal obligations, and the legitimate interest of the controller in managing the practice.\n\nData is retained for the time necessary for the stated purposes and in any case within the terms provided by applicable law. Health data is processed in accordance with the rules applicable to special categories of personal data."
+    },
+    cookies: {
+      title: "Cookies and similar technologies",
+      content: "This site uses only technical cookies necessary for the operation of the site and for storing the user's selected language. We do not use profiling cookies or analytics/tracking tools.\n\nIf analytics or marketing services are added in the future, a cookie consent banner will be displayed to manage consent."
+    },
+    thirdParties: {
+      title: "Third-party services",
+      content: "The site uses the following third-party services:\n\n\u2022 Google Maps / Google Reviews: to display the location of the practice and reviews. These services may use cookies or tracking technologies according to their own policies. We invite you to consult Google's privacy policy.\n\n\u2022 Website hosting: browsing data passes through the servers of the hosting platform used for the site."
+    },
+    rights: {
+      title: "Data subject rights",
+      content: "You have the right to:\n\n\u2022 access your personal data;\n\u2022 request rectification or erasure;\n\u2022 request restriction of processing;\n\u2022 object to processing;\n\u2022 request data portability.\n\nTo exercise your rights, you can write to info@brottostudio.it. You also have the right to lodge a complaint with the Italian Data Protection Authority (Garante per la protezione dei dati personali)."
+    },
+    changes: {
+      title: "Changes to this policy",
+      content: "This policy may be updated in case of regulatory or organizational changes. We invite you to check this page periodically."
+    }
   }
 };
 
