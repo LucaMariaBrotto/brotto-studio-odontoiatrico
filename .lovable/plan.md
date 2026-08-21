@@ -4,14 +4,16 @@
 
 La Privacy Policy è già online in una versione generica su `/privacy`. Per renderla formalmente valida e coerente con la realtà dello studio, occorre completare alcuni dati e specifiche che solo il titolare del trattamento o un suo consulente possono fornire.
 
-## Dati che servono
+## Dati ricevuti finora
 
-### 1. Identità del titolare del trattamento
+| Dato | Valore fornito |
+|------|----------------|
+| Denominazione | Brotto Studio Odontoiatrico |
+| Sede legale e operativa | Via Unione 2, 20122 Milano |
+| Partita IVA | 05377030969 |
+| Forma giuridica | Studio individuale |
 
-- Denominazione esatta (es. "Brotto Studio Odontoiatrico di Brotto Paolo Maria", o nome della società se è una S.r.l. / S.a.s.)
-- Indirizzo completo della sede legale e/o dello studio (Via Unione 2, 20122 Milano è già presente, ma va confermata come sede legale o solo operativa)
-- Partita IVA e/o Codice Fiscale del titolare
-- Forma giuridica (studio individuale, società, ecc.)
+## Dati ancora mancanti
 
 ### 2. Soggetto di riferimento per la privacy
 
