@@ -136,8 +136,8 @@ export default {
     back: "Torna alla Home",
     owner: {
       title: "Titolare del trattamento",
-      name: "Brotto Studio Odontoiatrico",
-      address: "Via Unione 2, 20122 Milano (MI)",
+      name: "Brotto Studio Odontoiatrico (studio individuale)",
+      address: "Via Unione 2, 20122 Milano (MI) – P.IVA 05377030969",
       email: "Email: info@brottostudio.it",
       phone: "Telefono: 02 86462283",
     },
