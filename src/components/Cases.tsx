@@ -11,9 +11,9 @@ import caseOrtho4 from "@/assets/case-ortho-4.jpg";
 import caseProsthetics1 from "@/assets/case-prosthetics-1.jpg";
 import caseProsthetics2 from "@/assets/case-prosthetics-2.jpg";
 import caseProsthetics3 from "@/assets/case-prosthetics-3.jpg";
-import caseImplant1 from "@/assets/case-implant-1.png.asset.json";
-import caseImplant2 from "@/assets/case-implant-2.png.asset.json";
-import caseImplant3 from "@/assets/case-implant-3.png.asset.json";
+import caseImplant1 from "@/assets/case-implant-1.jpg";
+import caseImplant2 from "@/assets/case-implant-2.jpg";
+import caseImplant3 from "@/assets/case-implant-3.jpg";
 
 const Cases = () => {
   const { t } = useTranslation();
