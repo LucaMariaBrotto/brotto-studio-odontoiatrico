@@ -1,4 +1,5 @@
 import { useTranslation } from "react-i18next";
+import { Link } from "react-router-dom";
 import { MapPin, Phone, Mail, Clock } from "lucide-react";
 
 const Footer = () => {
@@ -56,12 +57,12 @@ const Footer = () => {
           <p className="text-background/60">
             © {new Date().getFullYear()} Brotto Studio Odontoiatrico. {t("footer.rights")}
           </p>
-          <a
-            href="/privacy"
+          <Link
+            to="/privacy"
             className="text-background/60 hover:text-background transition-colors"
           >
             {t("footer.privacyLink")}
-          </a>
+          </Link>
         </div>
       </div>
     </footer>
