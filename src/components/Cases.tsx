@@ -23,7 +23,7 @@ const Cases = () => {
       icon: iconImplantology,
       titleKey: "cases.implantology",
       descKey: "cases.implantologyDesc",
-      photos: [caseImplant1.url, caseImplant2.url, caseImplant3.url],
+      photos: [caseImplant1, caseImplant2, caseImplant3],
     },
     {
       icon: iconProsthetics,
